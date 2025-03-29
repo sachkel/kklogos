@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalakruti Logo Concepts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4B0082;
+            --secondary-color: #FFB700;
+            --light-bg: #f8f4ff;
+            --dark-bg: #2c0057;
+            --text-color: #333;
+            --light-text: #f8f8f8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(75, 0, 130, 0.9) 0%, rgba(44, 0, 87, 0.9) 100%);
+            z-index: 1;
+        }
+        
+        header .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            padding: 60px 0;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .intro .main-logo {
+            display: block;
+            max-width: 300px;
+            margin: 0 auto 30px;
+            border-radius: 5px;
+        }
+        
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .intro-text h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .intro-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+        
+        .logo-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container {
+            background-color: var(--primary-color);
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-container img {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+            display: block;
+        }
+        
+        .logo-info {
+            padding: 30px;
+        }
+        
+        .logo-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        
+        .concept-section {
+            margin-bottom: 25px;
+        }
+        
+        .concept-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .concept-section h4 .emoji {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .concept-section ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .concept-section ul li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .concept-section ul li:before {
+            content: '•';
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .final-thought {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(75, 0, 130, 0.05);
+            border-left: 4px solid var(--secondary-color);
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .final-thought h4 {
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .final-thought p {
+            font-style: italic;
+        }
+        
+        footer {
+            background-color: var(--dark-bg);
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+        
+        .logo-display {
+            padding: 30px;
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .logo-display img {
+            max-width: 100%;
+            max-height: 250px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 100;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo-nav {
+            background-color: var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-logo {
+            color: var(--secondary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .table-of-contents {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+        
+        .toc-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        .toc-list {
+            list-style-type: none;
+            counter-reset: item;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .toc-list li {
+            margin-bottom: 15px;
+            counter-increment: item;
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .toc-list li:before {
+            content: counter(item);
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-weight: bold;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+        
+        .toc-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .toc-list a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .logo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+        
+        .gallery-number {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .grid-2-col {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .logo-info {
+                padding: 20px;
+            }
+            
+            .logo-container {
+                padding: 30px;
+            }
+            
+            .toc-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo-gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>Kalakruti Media</h1>
+            <p>Logo Design Concepts & Thought Process</p>
+        </div>
+    </header>
+    
+    <nav class="logo-nav">
+        <div class="container logo-nav-container">
+            <a href="#top" class="nav-logo">Kalakruti</a>
+            <div class="nav-links">
+                <a href="#introduction">Introduction</a>
+                <a href="#logo-gallery">Logo Gallery</a>
+                <a href="#detailed-concepts">Detailed Concepts</a>
+                <a href="#general-logos">General Logos</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="intro" id="introduction">
+        <div class="container">
+            <img src="images/logo1a.png" alt="Kalakruti Media Logo" class="main-logo">
+            <div class="intro-text">
+                <h2>The Kalakruti Identity Project</h2>
+                <p>Kalakruti Media celebrates the rich cultural heritage of Maharashtra through innovative digital storytelling. This logo design project aims to create a visual identity that honors Marathi culture while embracing modern media aesthetics.</p>
+                <p>Each logo concept presented here has been carefully crafted to reflect the brand's commitment to cultural authenticity, artistic expression, and digital innovation. The designs blend traditional Marathi elements with contemporary visual language, creating a distinctive identity for the platform.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Logo Gallery Section -->
+    <section id="logo-gallery">
+        <div class="container">
+            <h2 class="section-title">Logo Gallery</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Explore all logo concepts at a glance</p>
+            
+            <div class="logo-gallery">
+                <!-- Gallery items will go here in the next part -->
+                 <!-- Gallery Section Items - Paste inside the logo-gallery div -->
+<a href="#logo1" class="gallery-item">
+    <div class="gallery-number">1</div>
+    <img src="images/logo1.png" alt="Logo Concept #1: Festival Garland Circle">
+</a>
+<a href="#logo2" class="gallery-item">
+    <div class="gallery-number">2</div>
+    <img src="images/logo2.png" alt="Logo Concept #2: Fort Entrance + Projection Beam">
+</a>
+<a href="#logo3" class="gallery-item">
+    <div class="gallery-number">3</div>
+    <img src="images/logo3.png" alt="Logo Concept #3: Peacock Feather + Mic Icon Fusion">
+</a>
+<a href="#logo4" class="gallery-item">
+    <div class="gallery-number">4</div>
+    <img src="images/logo4.png" alt="Logo Concept #4: Mobile Screen + Story Frame Fusion">
+</a>
+<a href="#logo5" class="gallery-item">
+    <div class="gallery-number">5</div>
+    <img src="images/logo5.png" alt="Logo Concept #5: Rangoli Geometry + Film Grid Fusion">
+</a>
+<a href="#logo6" class="gallery-item">
+    <div class="gallery-number">6</div>
+    <img src="images/logo6.png" alt="Logo Concept #6: Dhol-Tasha Rhythm Emblem">
+</a>
+<a href="#logo7" class="gallery-item">
+    <div class="gallery-number">7</div>
+    <img src="images/logo7.png" alt="Logo Concept #7: Minimal Soundwave क">
+</a>
+<a href="#logo8" class="gallery-item">
+    <div class="gallery-number">8</div>
+    <img src="images/logo8.png" alt="Logo Concept #8: Warli Art Story Circle">
+</a>
+<a href="#logo9" class="gallery-item">
+    <div class="gallery-number">9</div>
+    <img src="images/logo9.png" alt="Logo Concept #9: Heritage Stage Emblem">
+</a>
+<a href="#logo10" class="gallery-item">
+    <div class="gallery-number">10</div>
+    <img src="images/logo10.png" alt="Logo Concept #10: Dynamic Logo System">
+</a>
+<a href="#logo11" class="gallery-item">
+    <div class="gallery-number">11</div>
+    <img src="images/logo11.png" alt="Logo Concept #11: Play & Stream Fusion">
+</a>
+<a href="#logo12" class="gallery-item">
+    <div class="gallery-number">12</div>
+    <img src="images/logo12.png" alt="Logo Concept #12: Typography Elegance">
+</a>
+<a href="#logo13" class="gallery-item">
+    <div class="gallery-number">13</div>
+    <img src="images/logo13.png" alt="Logo Concept #13: Chandrakor Concept">
+</a>
+<a href="#logo14" class="gallery-item">
+    <div class="gallery-number">14</div>
+    <img src="images/logo14.png" alt="Logo Concept #14: Media Masks">
+</a>
+<a href="#logo15" class="gallery-item">
+    <div class="gallery-number">15</div>
+    <img src="images/logo15.png" alt="Logo Concept #15: Film Reel Circle">
+</a>
+<a href="#logo16" class="gallery-item">
+    <div class="gallery-number">16</div>
+    <img src="images/logo16.png" alt="Logo Concept #16: Cultural Globe">
+</a>
+<a href="#logo17" class="gallery-item">
+    <div class="gallery-number">17</div>
+    <img src="images/logo17.png" alt="Logo Concept #17: Temple Architecture">
+</a>
+<a href="#logo18" class="gallery-item">
+    <div class="gallery-number">18</div>
+    <img src="images/logo18.png" alt="Logo Concept #18: Sound Wave Motion">
+</a>
+<a href="#logo19" class="gallery-item">
+    <div class="gallery-number">19</div>
+    <img src="images/logo19.png" alt="Logo Concept #19: Kalash Pattern">
+</a>
+<a href="#logo20" class="gallery-item">
+    <div class="gallery-number">20</div>
+    <img src="images/logo20.png" alt="Logo Concept #20: Network Web">
+</a>
+<a href="#logo21" class="gallery-item">
+    <div class="gallery-number">21</div>
+    <img src="images/logo21.png" alt="Logo Concept #21: Script Fusion">
+</a>
+<a href="#logo22" class="gallery-item">
+    <div class="gallery-number">22</div>
+    <img src="images/logo22.png" alt="Logo Concept #22: Cultural Leaf">
+</a>
+<a href="#logo23" class="gallery-item">
+    <div class="gallery-number">23</div>
+    <img src="images/logo23.png" alt="Logo Concept #23: Dance Motion">
+</a>
+<a href="#logo24" class="gallery-item">
+    <div class="gallery-number">24</div>
+    <img src="images/logo24.png" alt="Logo Concept #24: Digital Pen">
+</a>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Table of Contents -->
+    <div class="container" id="detailed-concepts">
+        <div class="table-of-contents">
+            <h3 class="toc-title">Detailed Logo Concepts</h3>
+            <ul class="toc-list">
+                <!-- Table of contents links will go here in the next part -->
+                 <!-- Table of Contents Items - Paste inside the toc-list ul -->
+<li><a href="#logo1">Festival Garland Circle</a></li>
+<li><a href="#logo2">Fort Entrance + Projection Beam</a></li>
+<li><a href="#logo3">Peacock Feather + Mic Icon Fusion</a></li>
+<li><a href="#logo4">Mobile Screen + Story Frame Fusion</a></li>
+<li><a href="#logo5">Rangoli Geometry + Film Grid Fusion</a></li>
+<li><a href="#logo6">Dhol-Tasha Rhythm Emblem</a></li>
+<li><a href="#logo7">Minimal Soundwave "क"</a></li>
+<li><a href="#logo8">Warli Art Story Circle</a></li>
+<li><a href="#logo9">Heritage Stage Emblem</a></li>
+<li><a href="#logo10">Dynamic Logo System</a></li>
+<li><a href="#logo11">Play & Stream Fusion</a></li>
+<li><a href="#logo12">Typography Elegance</a></li>
+<li><a href="#logo13">Chandrakor Concept</a></li>
+<li><a href="#logo14">Media Masks</a></li>
+<li><a href="#logo15">Film Reel Circle</a></li>
+<li><a href="#logo16">Cultural Globe</a></li>
+<li><a href="#logo17">Temple Architecture</a></li>
+<li><a href="#logo18">Sound Wave Motion</a></li>
+<li><a href="#logo19">Kalash Pattern</a></li>
+<li><a href="#logo20">Network Web</a></li>
+<li><a href="#logo21">Script Fusion</a></li>
+<li><a href="#logo22">Cultural Leaf</a></li>
+<li><a href="#logo23">Dance Motion</a></li>
+<li><a href="#logo24">Digital Pen</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Logo Details Section -->
+    <section id="logos">
+        <h2 class="section-title">Detailed Logo Concepts</h2>
+        <div class="container">
+            <!-- Logo details will go here in subsequent parts -->
+             <!-- Logo #1: Festival Garland Circle -->
+<div class="logo-card" id="logo1">
+    <div class="logo-container">
+        <img src="images/logo1.png" alt="Festival Garland Circle Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #1: Festival Garland Circle</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A circular floral garland (फुलांची माळ) surrounds the Marathi name "कलाकृती मीडिया".</li>
+                <li>The petals or elements are stylized to appear like both marigolds (common in Indian festivals) and media icons (play, mic, book, camera) subtly embedded within.</li>
+                <li>The palette stays within golden yellow and purple, representing celebration and elegance.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates joy, culture, and collective participation — like a garland made by many hands.</p>
+            <ul>
+                <li>The flower circle signifies:
+                    <ul>
+                        <li>🌸 Celebration and welcome (used in events, rituals, theatre)</li>
+                        <li>🔁 Unity, harmony, and the cycle of stories</li>
+                        <li>🎨 Artistic diversity (each petal = a different art form)</li>
+                    </ul>
+                </li>
+                <li>The central text is the core of this ecosystem: Kalakruti is where it all comes together.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Completely Marathi in spirit — visually festive yet minimal.</li>
+                <li>Replaces cluttered mask-and-note symbols with a symbol of honor and festivity.</li>
+                <li>Speaks to Kalakruti as a platform that celebrates all forms of Marathi creativity, from Lavani to lyrics, from cinema to craft.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Can be used for:
+                    <ul>
+                        <li>Festival-specific content branding</li>
+                        <li>Cultural events, workshops, felicitation visuals</li>
+                        <li>Diwali, Gudhi Padwa, Ganesh Utsav promos</li>
+                    </ul>
+                </li>
+                <li>Garland can evolve: sometimes flowers, sometimes media symbols — always circular unity.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Petals can bloom or float into position, forming the ring</li>
+                <li>Center fades in like a floral welcome or stage garlanding ceremony</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>A soft, human, emotional finale to the logo family — this design positions Kalakruti as the cultural host, the storyteller, the festival stage for Marathi media.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #2: Fort Entrance + Projection Beam -->
+<div class="logo-card" id="logo2">
+    <div class="logo-container">
+        <img src="images/logo2.png" alt="Fort Entrance + Projection Beam Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #2: Fort Entrance + Projection Beam</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A bold, symmetric fort gateway silhouette (inspired by Shaniwarwada / Raigad / Shivneri), carved into a circular form.</li>
+                <li>A beam of light or projection line emerges from inside the fort, symbolizing storytelling being broadcast outward.</li>
+                <li>Below or beside it sits the name "कलाकृती मीडिया" in a bold, grounded Devanagari font.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo combines historic strength and modern media expression.</p>
+            <ul>
+                <li>The fort is a symbol of Maratha legacy, pride, and permanence.</li>
+                <li>The projection beam adds a cinematic, digital twist — representing:
+                    <ul>
+                        <li>📽 Films being screened</li>
+                        <li>📡 Ideas reaching out</li>
+                        <li>🌟 Culture being illuminated</li>
+                    </ul>
+                </li>
+                <li>This design conveys: "Stories rooted in our past, projected toward the future."</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Forts are iconic, recognizably Maharashtrian — commanding respect, legacy, and grandeur.</li>
+                <li>The beam adds motion, progress, "media-tech energy" without breaking the cultural feel.</li>
+                <li>Strong contrast and iconography make this extremely memorable.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Works as an emblem, app icon, badge for cultural segments.</li>
+                <li>Fort silhouette is easily stylized across formats; projection beam can vary subtly per sub-brand or theme.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Fort doors could slide open, revealing the light beam that fades into brand name.</li>
+                <li>Could serve as a cinematic title screen before digital content starts.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>A powerful combination of cultural roots and creative projection — this logo symbolizes Kalakruti as the fort of Marathi media.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #3: Peacock Feather + Mic Icon Fusion -->
+<div class="logo-card" id="logo3">
+    <div class="logo-container">
+        <img src="images/logo3.png" alt="Peacock Feather + Mic Icon Fusion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #3: Peacock Feather + Mic Icon Fusion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A flowing peacock feather silhouette subtly blends into or surrounds a minimal mic icon at the center.</li>
+                <li>The brand name "कलाकृती मीडिया" is positioned clearly, maintaining legibility and symmetry.</li>
+                <li>Gold feather + mic against a royal purple background reinforces brand palette.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This design combines vocal expression with aesthetic beauty — the mic for sound, voice, performance, and the peacock feather as a cultural symbol of grace, pride, and tradition.</p>
+            <ul>
+                <li>🖋 The feather is also a metaphor for writing, poetry, and creation.</li>
+                <li>🎙 The mic symbolizes performance, storytelling, and broadcast.</li>
+                <li>Together, they say: "Voice of culture. Expression of tradition."</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The peacock is a beloved symbol across Indian art — but here it's treated with restraint and elegance, not excess.</li>
+                <li>The mic places Kalakruti in the performing arts, music, and podcast space.</li>
+                <li>The fusion makes it contemporary + rooted, perfect for digital Marathi creators.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Feather alone can be used as a stylized brand mark.</li>
+                <li>Mic + feather combo works across:
+                    <ul>
+                        <li>Music content</li>
+                        <li>Literature and poetry segments</li>
+                        <li>Talk shows, interviews, voiceover work</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Feather could flow in like ink; mic could glow or pulse.</li>
+                <li>Used as a dynamic intro for voice-based content intros or channel idents.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>Grace meets voice. This logo represents Kalakruti as the poetic voice of Maharashtra, broadcast to the world.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #4: Mobile Screen + Story Frame Fusion -->
+<div class="logo-card" id="logo4">
+    <div class="logo-container">
+        <img src="images/logo4.png" alt="Mobile Screen + Story Frame Fusion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #4: Mobile Screen + Story Frame Fusion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A clean rectangular outline resembling a mobile screen or digital frame, enclosing the text "कलाकृती मीडिया".</li>
+                <li>Inside the frame or on one edge is a stylized play icon, camera aperture, or page corner, referencing digital storytelling.</li>
+                <li>Layout stays geometric, with high clarity and visual symmetry.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This design speaks to Kalakruti as a digital-first platform — a mobile screen where stories unfold.</p>
+            <ul>
+                <li>The frame = smartphone, tablet, TV screen — today's main stage for viewing.</li>
+                <li>Inside it sits content, i.e., Marathi cinema, reels, songs, and storytelling.</li>
+                <li>The form is precise and modern, representing UI clarity and content framing.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The screen doesn't distract — it showcases the Marathi identity within.</li>
+                <li>"कलाकृती मीडिया" stays the focal point, not symbols — emphasizing the name and language.</li>
+                <li>Combines minimalism with contextual storytelling (everyone today views stories on screen).</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Frame can be reused as:
+                    <ul>
+                        <li>Thumbnail shape</li>
+                        <li>Reel preview element</li>
+                        <li>Logo lockup on app screens</li>
+                    </ul>
+                </li>
+                <li>Perfect for responsive branding across formats — web, mobile, smart TV.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The frame can wipe in or rotate like a phone.</li>
+                <li>The name could scroll upward or fade in, simulating content loading.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>A screen that frames culture — this logo makes Kalakruti's purpose clear: presenting rooted stories on modern devices.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #5: Rangoli Geometry + Film Grid Fusion -->
+<div class="logo-card" id="logo5">
+    <div class="logo-container">
+        <img src="images/logo5.png" alt="Rangoli Geometry + Film Grid Fusion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #5: Rangoli Geometry + Film Grid Fusion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A symmetrical emblem inspired by rangoli patterns, featuring layered geometric elements.</li>
+                <li>Subtly integrated into the pattern are grid-like motifs resembling film reels or camera shutters.</li>
+                <li>The brand name "कलाकृती मीडिया" is placed in a centered, dignified Devanagari font.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This concept marries the celebratory visuals of traditional Maharashtrian art (rangoli) with the structure and frames of visual storytelling (film + media).</p>
+            <ul>
+                <li>Rangoli = creativity, welcome, celebration</li>
+                <li>Film grid = cinema, structure, sequencing</li>
+                <li>Together, they suggest that Kalakruti is where tradition meets motion picture, where patterns become stories.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Rangoli has deep emotional value in Maharashtrian homes and public spaces — it's a canvas of culture.</li>
+                <li>The inclusion of film-like geometry links Kalakruti back to cinema, reels, editing, media flow.</li>
+                <li>Culturally vibrant, yet global and geometric, without excessive elements or clichés.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Perfect for:
+                    <ul>
+                        <li>Cultural promotions and festive campaigns</li>
+                        <li>Event backdrops or title animations</li>
+                        <li>Static + dynamic logos with patterned extensions</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Rangoli patterns could draw themselves live, segment by segment.</li>
+                <li>The logo could zoom out from a camera frame into a full rangoli reveal — blending story + culture.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This is Kalakruti as a mandala of stories — organized yet vibrant, emotional yet structured. A perfect blend of heritage and innovation.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #6: Dhol-Tasha Rhythm Emblem -->
+<div class="logo-card" id="logo6">
+    <div class="logo-container">
+        <img src="images/logo6.png" alt="Dhol-Tasha Rhythm Emblem Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #6: Dhol-Tasha Rhythm Emblem</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A bold and symmetrical design featuring vertical rhythm bars or beat stripes, abstractly representing Dhol-Tasha formations.</li>
+                <li>The elements radiate or build upward like sound pillars — evoking energy and movement.</li>
+                <li>"कलाकृती मीडिया" appears beneath, anchoring the cultural context in clean Devanagari.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>Inspired by the powerful and iconic Dhol-Tasha pathaks of Maharashtra, this logo embodies:</p>
+            <ul>
+                <li>🥁 Rhythm, celebration, community</li>
+                <li>🔊 Sound, unity, volume</li>
+                <li>🏞 Street-performance energy — where art meets people</li>
+                <li>Rather than drawing literal drums or performers, it uses pattern and form to reflect intensity and spirit.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Symbolizes Kalakruti's grassroots connect, festive energy, and its ability to bring people together through cultural media.</li>
+                <li>Marathi, festive, youthful — while remaining clean and premium.</li>
+                <li>Speaks to emotion and momentum, critical to both audio and video media.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Great for use in:
+                    <ul>
+                        <li>Festival promos</li>
+                        <li>Music reels</li>
+                        <li>Youth-centric series</li>
+                    </ul>
+                </li>
+                <li>Its structure allows stylized monochrome use, animation, and integration with background beats.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Rhythm bars could animate to music — pulsing or dancing with each beat.</li>
+                <li>Text could reveal in sync with a rising dhol rhythm or crescendo.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>A logo that pulses with festival fire and people's rhythm — Kalakruti, through this emblem, becomes the sound of celebration.</p>
+        </div>
+    </div>
+</div>
+        <!-- Logo #7: Minimal Soundwave "क" -->
+<div class="logo-card" id="logo7">
+    <div class="logo-container">
+        <img src="images/logo7.png" alt="Minimal Soundwave क Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #7: Minimal Soundwave "क"</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A sleek, modern Devanagari letter "क" is shaped with geometric precision.</li>
+                <li>Alongside or embedded into it is a flowing soundwave line – either trailing off its top stroke or integrated beneath like an underline.</li>
+                <li>Background: deep purple. Elements in golden yellow or soft gradients for a rhythmic, elegant look.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo blends language and sound, symbolizing Kalakruti's role in spoken word, audio content, and music.</p>
+            <ul>
+                <li>The "क" grounds it in Marathi language and culture.</li>
+                <li>The waveform represents:
+                    <ul>
+                        <li>🎧 Music</li>
+                        <li>🎤 Spoken word / podcast / Lavani rhythm</li>
+                        <li>📡 Streaming content (symbolic of energy and movement)</li>
+                    </ul>
+                </li>
+                <li>Inspired by platforms like Spotify, Apple Music — but in a script-first, culturally rooted way.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Rooted in Marathi phonetics and digital media.</li>
+                <li>Unlike literal microphones or instruments, the waveform keeps it clean and globally premium.</li>
+                <li>Works across audio, literature, and video content under Kalakruti's umbrella.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The waveform line can be adapted or animated based on genre:
+                    <ul>
+                        <li>Jagran, Kirtan → slow pulses</li>
+                        <li>Lavani, Powada → fast, bold beats</li>
+                        <li>Bhavageet → gentle flow</li>
+                    </ul>
+                </li>
+                <li>Ideal for app icons, waveform visualizations, audio intros.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The "क" could pulse subtly, or the waveform can animate in sync with music/audio.</li>
+                <li>Could also be used as a loading bar, giving it a utility purpose.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>Elegant, minimal, yet emotionally resonant — this logo gives Kalakruti a tech-era Marathi voice, one wave at a time.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #8: Warli Art Story Circle -->
+<div class="logo-card" id="logo8">
+    <div class="logo-container">
+        <img src="images/logo8.png" alt="Warli Art Story Circle Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #8: Warli Art Story Circle</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A refined circular logo featuring simplified Warli-style human figures forming a rhythmic ring.</li>
+                <li>Centered within the circle is the correctly spelled "कलाकृती मीडिया" in clean, bold Devanagari script.</li>
+                <li>Color scheme: Golden yellow figures and text over a deep purple background (as per brandbook).</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates Marathi folk heritage and community-driven storytelling through the lens of Warli art, a traditional tribal expression from Maharashtra.</p>
+            <ul>
+                <li>The circular ring symbolizes:
+                    <ul>
+                        <li>📖 Narrative cycles — timeless stories</li>
+                        <li>👫 Community and collaboration — content creators, audiences, and performers</li>
+                        <li>🔄 Continuity and evolution — Kalakruti as a living, growing platform</li>
+                    </ul>
+                </li>
+                <li>Warli human figures represent different creators — dancers, musicians, actors, poets — without being literal.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Warli art is uniquely Maharashtrian yet globally admired for its simplicity and symbolism — a perfect metaphor for Kalakruti's mission to take rooted content to digital platforms.</li>
+                <li>The Devanagari script stays at the center — positioning Marathi language and identity as core to the brand.</li>
+                <li>The bold but clean layout respects global logo standards — it's minimal, versatile, and distinctly regional.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>Excellent for:
+                    <ul>
+                        <li>🎥 YouTube watermark</li>
+                        <li>📱 Mobile app icon</li>
+                        <li>🖼 Offline banners / cultural event branding</li>
+                    </ul>
+                </li>
+                <li>The circle and Warli motif can double as a brand texture or be reused across campaigns.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Each figure could dance or draw into position in a subtle animation.</li>
+                <li>The circle could rotate gently, or the name could fade in as the ring completes.</li>
+                <li>The style is clean and scalable — works from reel thumbnails to event stage backdrops.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo is a fusion of tribal minimalism and digital branding intelligence. It delivers emotion, culture, and clarity— making Kalakruti Media instantly relatable to its Marathi audience and appealing to a modern content consumer.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #9: Heritage Stage Emblem -->
+<div class="logo-card" id="logo9">
+    <div class="logo-container">
+        <img src="images/logo9.png" alt="Heritage Stage Emblem Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #9: Heritage Stage Emblem</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>The logo uses a stylized arch-shaped outline in golden yellow, symbolizing a traditional Maharashtrian stage or temple dome.</li>
+                <li>Beneath the arch, the name "कलाकृती मीडिया" is written in clean, bold Devanagari script.</li>
+                <li>The inner space of the arch includes subtle upward strokes, abstractly representing a stage, curtains, or spotlight rays.</li>
+                <li>The entire design is balanced symmetrically on a royal purple background — maintaining the brand palette.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Creative Concept</h4>
+            <p>This logo draws from Marathi cultural architecture and performance spaces.</p>
+            <p>The arch represents:</p>
+            <ul>
+                <li>🏛 A temple dome – reflecting heritage, reverence, and creative sanctity</li>
+                <li>🎭 A stage proscenium – the place where stories are told and performances begin</li>
+                <li>🚪 A gateway – signifying access to the world of Marathi entertainment</li>
+            </ul>
+            <p>The subtle upward rays are a visual metaphor for:</p>
+            <ul>
+                <li>A spotlight turning on, or</li>
+                <li>The curtain lifting before a grand performance</li>
+            </ul>
+            <p>Together, this forms the idea of Kalakruti Media as the digital sabhagruha — a sanctified stage for Marathi storytelling.</p>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The arch structure is inspired by Maratha-era forts and temple entrances, tying the brand visually to its roots.</li>
+                <li>No Western or cliché imagery like masks or cameras — just clean Indian symbolism, redesigned for modern use.</li>
+                <li>The bold Marathi script grounds the logo in language and purpose.</li>
+                <li>Purple symbolizes imagination; golden yellow implies celebration and cultural richness — a palette worthy of premium, rooted storytelling.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability & Usage</h4>
+            <ul>
+                <li>The arch icon is perfect as a standalone app logo or watermark.</li>
+                <li>Works great as a print emblem, favicon, YouTube profile icon, or on merchandise.</li>
+                <li>The shape is symmetrical, scalable, and clean — usable across digital and offline formats.</li>
+                <li>In sub-brands, the arch can remain constant while the inner symbol can change (e.g. spotlight for cinema, book for literature, mic for music).</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The arch could animate like a curtain parting or a dome "opening" to reveal the text below.</li>
+                <li>Could also animate like a stage light illuminating the name.</li>
+                <li>A subtle shine sweeping across the golden arch would evoke the reveal of an exciting new show or film.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo honors Marathi culture's architectural and artistic depth, but presents it with modern sophistication. It instantly tells viewers: "This is a platform where meaningful performances and stories begin."</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #10: Dynamic Logo System -->
+<div class="logo-card" id="logo10">
+    <div class="logo-container">
+        <img src="images/logo10.png" alt="Dynamic Logo System Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #10: Dynamic Logo System</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A bold circular emblem with the Marathi letter "क" stylized at the center.</li>
+                <li>The circle contains modular, interchangeable motifs that can evolve — e.g., subtle patterns, geometric accents, or theme-based textures.</li>
+                <li>The version shown uses clean waveforms and rhythmic elements that suggest media flow, layered in a modern aesthetic on purple and golden-yellow.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Creative Concept</h4>
+            <p>This logo was designed as a Dynamic Identity System — not just one logo, but a base logo architecture that can adapt across content verticals and campaigns.</p>
+            <ul>
+                <li>The core element is the circle (representing continuity, unity, and completeness).</li>
+                <li>The central "क" is Kalakruti's identity anchor — distinctly Marathi and artistically stylized.</li>
+                <li>Around or within this framework, the design allows for modular visuals:
+                    <ul>
+                        <li>📽 A film strip-inspired texture for cinema</li>
+                        <li>📚 A lined page for literature</li>
+                        <li>🎵 Sound waves for music</li>
+                        <li>🎤 A mic ripple for performances</li>
+                        <li>🪔 Festive rangoli motifs for cultural events</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>This logo system allows Kalakruti to scale content-wise and brand-wise, while always staying recognizable.</p>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Anchoring the identity in the letter "क" (कला = art) upholds the cultural and linguistic soul of the brand.</li>
+                <li>By adopting a flexible design system, Kalakruti shows it is future-ready, content-diverse, and digitally intelligent.</li>
+                <li>It aligns with modern global identity systems (like Google Doodles or Disney+ categories) that retain brand recall while expressing different creative directions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability & Usage</h4>
+            <ul>
+                <li>Works as a static mark, but also in a variant family:
+                    <ul>
+                        <li>A full circle for app icon</li>
+                        <li>A simplified "क" version as a watermark</li>
+                        <li>Modular versions for categories (Kalakruti Music, Kalakruti Cinema, etc.)</li>
+                    </ul>
+                </li>
+                <li>All versions would share typography, form, and color logic, allowing brand consistency across digital channels, events, and campaigns.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The outer ring could rotate or morph, showcasing different themes or content genres.</li>
+                <li>The "क" might draw itself on-screen, while background textures animate in (e.g. a film grain, musical waveform, or ink strokes).</li>
+                <li>Ideal for intro stingers and platform UI transitions — giving the viewer a multi-dimensional brand experience.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo turns the Kalakruti emblem into a living canvas — one that adapts, evolves, and expresses the vibrant diversity of Marathi entertainment without losing its core identity.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #11: Play & Stream Fusion -->
+<div class="logo-card" id="logo11">
+    <div class="logo-container">
+        <img src="images/logo11.png" alt="Play & Stream Fusion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #11: Play & Stream Fusion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>The logo features a bold play icon at the center, with curved streaming wave lines radiating from it like echoes or ripples.</li>
+                <li>These waves are arranged in a balanced, almost floral arc — abstract enough to hint at both technology and heritage.</li>
+                <li>The background remains deep purple, while the play icon and waves are rendered in a rich golden yellow, reinforcing the brand palette.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Creative Concept</h4>
+            <p>This logo bridges two worlds:</p>
+            <ul>
+                <li>The digital streaming world (via the play icon and wave metaphors)</li>
+                <li>And Marathi cultural energy, which thrives on rhythm, motion, and sound.</li>
+            </ul>
+            <p>The curved lines suggest:</p>
+            <ul>
+                <li>🎵 Sound waves (music, Lavani, Tamasha)</li>
+                <li>📶 Broadcast signals (digital, Wi-Fi, radio, OTT)</li>
+                <li>🌊 Story ripples – ideas traveling outward from the brand to the audience</li>
+            </ul>
+            <p>At the core is the universal play button, but stylized into a contemporary visual metaphor for storytelling in motion.</p>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>While minimal and modern, the curved streamlines subtly echo folk instruments (e.g. the dhol's vibrations or veena strings).</li>
+                <li>The entire composition is built around motion and flow, representing how Kalakruti carries Marathi stories across digital mediums.</li>
+                <li>There's no literal text in English — the visuals speak a universal media language, which is what digital-first Marathi content platforms need today.</li>
+                <li>This mark positions Kalakruti alongside Spotify, Netflix, YouTube in iconography — but with its own cultural undertone.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability & Usage</h4>
+            <ul>
+                <li>This logo functions beautifully in icon form — the central triangle plus wave lines are instantly recognizable, even in small scale.</li>
+                <li>Variants can be created: vertical, circular, or monogram with just the triangle + 2 curved bars.</li>
+                <li>Extremely clean silhouette for app icons, video watermarks, channel branding, and live event use.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The triangle could click forward or pulse, and the wave lines could animate outward like sound or Wi-Fi pulses.</li>
+                <li>Can be used for audio-reactive elements (waves move to music beats), perfect for intros to content, especially in YouTube or OTT settings.</li>
+                <li>Animated form subtly conveys: "Here's a story worth watching/listening."</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo brings together motion, sound, and digital power with elegance — echoing Kalakruti's role as the streaming stage for Marathi content. It's sleek, modern, but with a soul.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #12: Typography Elegance -->
+<div class="logo-card" id="logo12">
+    <div class="logo-container">
+        <img src="images/logo12.png" alt="Typography Elegance Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #12: Typography Elegance</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎨</span>Visual Description</h4>
+            <ul>
+                <li>This logo highlights the word "कलाकृती" in bold, graceful Devanagari script, elegantly styled with a custom-designed calligraphic 'क' as a centerpiece.</li>
+                <li>The color palette stays within the brandbook's deep purple and golden-yellow, representing cultural richness, artistic flair, and modern professionalism.</li>
+                <li>The English text "KALAKRUTI MEDIA" is placed beneath in a clean, modern sans-serif font, creating a bridge between tradition and global media aesthetics.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Creative Thought Process</h4>
+            <ol>
+                <li><strong>Typography-Driven Identity</strong>
+                    <ul>
+                        <li>Inspired by the brandbook's emphasis on Marathi typography innovation, this design uses customized Devanagari forms to make typography itself the logo's icon.</li>
+                        <li>The letter "क" is stylized into a dynamic symbol, giving the logo a distinct identity even without illustrations.</li>
+                    </ul>
+                </li>
+                <li><strong>Cultural Authenticity + Contemporary Appeal</strong>
+                    <ul>
+                        <li>Devanagari calligraphy evokes cultural pride among Marathi-speaking audiences.</li>
+                        <li>Paired with modern English type, it appeals to younger, digitally native viewers and maintains global sensibility.</li>
+                    </ul>
+                </li>
+                <li><strong>No Masks, No Play Buttons – Still Entertainment</strong>
+                    <ul>
+                        <li>This design avoids clichés like drama masks or play buttons, instead using expressive letterforms to capture Kalakruti's essence—art, creation, and storytelling.</li>
+                    </ul>
+                </li>
+                <li><strong>Digital + Print Versatility</strong>
+                    <ul>
+                        <li>The logo is scalable, highly legible at all sizes, and can be used as a wordmark, social media icon, or app launcher.</li>
+                        <li>The stylized "क" can stand alone as a monogram, giving it a dynamic system identity as recommended in the brandbook.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">📏</span>Alignment with Brandbook Guidelines</h4>
+            <ul>
+                <li>✅ Color Compliance – Uses deep purple and golden-yellow</li>
+                <li>✅ Marathi Typography Innovation – Unique letterform play</li>
+                <li>✅ Cultural Symbolism without Literalism – Fresh, modern twist</li>
+                <li>✅ Global Readability – Modern sans-serif pairing</li>
+                <li>✅ System Identity Potential – Stylized "क" can scale or animate</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This typography-driven design maintains cultural authenticity while projecting a contemporary image. It positions Kalakruti as both a guardian of Maharashtrian cultural expression and a modern media entity ready for global recognition.</p>
+        </div>
+    </div>
+</div>
+                        <!-- Logo #13: Chandrakor Concept -->
+<div class="logo-card" id="logo13">
+    <div class="logo-container">
+        <img src="images/logo13.png" alt="Chandrakor Concept Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #13: Chandrakor Concept</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🌙</span>Visual Description</h4>
+            <ul>
+                <li>A stylized crescent moon (Chandrakor) forms the main visual element of the logo, executed in golden yellow.</li>
+                <li>Inside or alongside the crescent sits a subtle play button, symbolizing digital media content.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari script.</li>
+                <li>The deep purple background creates rich contrast with the golden elements.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo leverages the Chandrakor (crescent tilak) – a traditional symbol deeply connected to Maharashtra's cultural identity.</p>
+            <ul>
+                <li>The Chandrakor is a crescent-moon shaped mark traditionally worn by Maharashtrians, notably by Chhatrapati Shivaji Maharaj and during festivals.</li>
+                <li>It signifies aspiration, victory over obstacles, and has become a prideful emblem of Marathi identity.</li>
+                <li>The play button integration signifies how Kalakruti presents traditional stories through modern digital media.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The Chandrakor provides instant cultural recognition and resonance with Marathi audiences.</li>
+                <li>The crescent shape simultaneously evokes heritage while suggesting forward motion and growth – appropriate for a progressive media platform.</li>
+                <li>Recently, the Chandrakor was woven into the Colors Marathi channel's new identity, showing its continued relevance in modern Marathi media branding.</li>
+                <li>The deep purple background with golden Chandrakor maintains the brand color palette while creating a regal, dignified impression.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The Chandrakor is highly recognizable even at small sizes, making it ideal for app icons and social media profiles.</li>
+                <li>The symbol can be used independently of the text in contexts requiring minimal branding.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Can be stylized differently for various sub-brands while maintaining the core Chandrakor identity.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The Chandrakor could draw itself elegantly before revealing the play button within.</li>
+                <li>Alternatively, the crescent could animate like the rising moon, symbolizing the ascent of Marathi culture.</li>
+                <li>The play button could pulse gently, indicating that content is ready to be experienced.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>By leveraging one of Maharashtra's most recognizable cultural symbols in a clean, modern way, this concept creates immediate cultural connection while clearly communicating Kalakruti's identity as a media platform. The Chandrakor represents both heritage pride and forward aspirations – perfectly embodying Kalakruti's mission.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #14: Media Masks -->
+<div class="logo-card" id="logo14">
+    <div class="logo-container">
+        <img src="images/logo14.png" alt="Media Masks Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #14: Media Masks</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>Traditional theater masks (comedy and tragedy) are reimagined with modern, clean lines and slight digital styling.</li>
+                <li>A small musical note or media icon is positioned above the masks, creating a balanced composition.</li>
+                <li>The brand name "कलाकृती मीडिया" appears beneath in a strong, grounded Devanagari typeface.</li>
+                <li>The color scheme adheres to the brand palette, with golden masks against a deep purple background.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo presents a thoughtful reinvention of the classic theater masks symbol, which has universal recognition in the entertainment world.</p>
+            <ul>
+                <li>The masks represent:
+                    <ul>
+                        <li>🎭 Dramatic arts and performance tradition</li>
+                        <li>🎬 Emotional storytelling across media formats</li>
+                        <li>🎨 The dual nature of entertainment (joy and poignancy)</li>
+                    </ul>
+                </li>
+                <li>While theater masks are traditional, the execution is contemporary – with minimalist lines and subtle digital-era adaptations.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Theater has deep roots in Marathi culture, from traditional forms like Tamasha to contemporary Marathi cinema.</li>
+                <li>The masks instantly communicate "arts and entertainment" to viewers of all backgrounds.</li>
+                <li>The modern execution ensures the logo feels current rather than antiquated.</li>
+                <li>The musical note adds a layer of meaning, acknowledging the importance of music in Marathi performing arts.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The logo has excellent recognition value even at small sizes.</li>
+                <li>Can be effectively adapted across digital and print applications.</li>
+                <li>The masks could be modified slightly for different content categories while maintaining brand consistency.</li>
+                <li>Works well in both color and monochrome applications.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The masks could morph between expressions, representing the range of emotions in storytelling.</li>
+                <li>The musical note could pulse or dance to suggest rhythm and melody.</li>
+                <li>A simple rotation or reveal animation would work effectively for video intros.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo reinterprets a classic symbol of performance arts in a fresh, contemporary way. It instantly communicates Kalakruti's role in the entertainment space while maintaining cultural relevance. The balance of tradition and modernity makes it both timeless and current.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #15: Film Reel Circle -->
+<div class="logo-card" id="logo15">
+    <div class="logo-container">
+        <img src="images/logo15.png" alt="Film Reel Circle Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #15: Film Reel Circle</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A circular film reel forms the main visual element, with a stylized play button or camera aperture at its center.</li>
+                <li>The reel holes around the perimeter are simplified and modernized, creating a clean, geometric pattern.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden yellow film reel against the deep purple background creates striking contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates the cinematic tradition while maintaining relevance in the digital media age.</p>
+            <ul>
+                <li>The film reel represents:
+                    <ul>
+                        <li>🎬 Cinematic heritage and the art of visual storytelling</li>
+                        <li>🔄 The cyclical nature of stories – timeless narratives that continue to evolve</li>
+                        <li>🎯 Focus and precision in content creation</li>
+                    </ul>
+                </li>
+                <li>The circular form suggests completeness, continuity, and the immersive nature of good storytelling.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Maharashtra has a rich cinematic tradition, including the vibrant Marathi film industry.</li>
+                <li>The film reel is instantly recognizable as a symbol of movies and visual entertainment.</li>
+                <li>The modern execution makes it feel contemporary rather than nostalgic.</li>
+                <li>The central play button bridges traditional film with digital-era streaming content.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The circular form works excellently as an app icon, social media profile, or favicon.</li>
+                <li>The logo scales well across different sizes and applications.</li>
+                <li>The reel motif can be adapted for different content categories while maintaining brand consistency.</li>
+                <li>Functions effectively in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The reel could rotate smoothly, suggesting film running through a projector.</li>
+                <li>The play button could pulse or transform into other relevant media symbols.</li>
+                <li>Individual reel holes could appear sequentially before completing the circle.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo creates a perfect balance between cinematic tradition and digital innovation. It communicates Kalakruti's commitment to quality visual content while maintaining a contemporary aesthetic. The circular form suggests the immersive, continuous nature of storytelling that brings people together.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #16: Cultural Globe -->
+<div class="logo-card" id="logo16">
+    <div class="logo-container">
+        <img src="images/logo16.png" alt="Cultural Globe Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #16: Cultural Globe</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A stylized globe or sphere with cultural elements or media symbols integrated into its surface.</li>
+                <li>Subtle grid lines or meridians suggest global reach while maintaining clean aesthetics.</li>
+                <li>A small Marathi cultural symbol (like a small turban or paithani border) is integrated to add cultural specificity.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in strong Devanagari typography.</li>
+                <li>The golden globe against the deep purple background creates rich contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo positions Kalakruti as a global platform for Marathi content and culture.</p>
+            <ul>
+                <li>The globe represents:
+                    <ul>
+                        <li>🌍 Global reach and accessibility of digital media</li>
+                        <li>🌟 Universal appeal of good storytelling</li>
+                        <li>🔄 Interconnectedness of cultures and communities</li>
+                    </ul>
+                </li>
+                <li>The Marathi cultural elements ensure the global perspective remains rooted in specific cultural identity.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Marathi diaspora is global, with communities across continents seeking cultural connection.</li>
+                <li>Digital media platforms enable global distribution of culturally-specific content.</li>
+                <li>The design balances cultural specificity with universal appeal.</li>
+                <li>Positions Kalakruti as modern and forward-looking while maintaining cultural roots.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The spherical form works excellently as an app icon or social media profile.</li>
+                <li>The logo scales effectively across different sizes and applications.</li>
+                <li>Different cultural or media elements could be emphasized for different content categories.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The globe could rotate smoothly, revealing different cultural or media elements.</li>
+                <li>Grid lines could illuminate sequentially, suggesting global connectivity.</li>
+                <li>Media icons could appear and transform across the surface of the globe.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo effectively positions Kalakruti as both culturally specific and globally relevant. It acknowledges the digital age's borderless nature while maintaining strong cultural identity. The design suggests that Marathi content has universal appeal and global reach through Kalakruti's platform.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #17: Temple Architecture -->
+<div class="logo-card" id="logo17">
+    <div class="logo-container">
+        <img src="images/logo17.png" alt="Temple Architecture Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #17: Temple Architecture</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A stylized temple spire (shikhar) or traditional Maharashtrian architectural element forms the central motif.</li>
+                <li>Modern, clean lines give the traditional form contemporary relevance.</li>
+                <li>Subtle media elements (like a play button or screen) are integrated into the architectural structure.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden architectural element against the purple background creates striking visual contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo draws inspiration from traditional Maharashtrian architecture while pointing toward digital futures.</p>
+            <ul>
+                <li>The architectural element represents:
+                    <ul>
+                        <li>🏛️ Cultural heritage and permanence</li>
+                        <li>🏆 Excellence and aspiration (reaching upward)</li>
+                        <li>🏠 A welcoming space for community gathering</li>
+                    </ul>
+                </li>
+                <li>The integration of media elements suggests that traditional structures can house modern content.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Maharashtra has distinctive architectural traditions visible in temples, wadas, and forts.</li>
+                <li>Architectural elements are instantly recognizable as culturally significant.</li>
+                <li>The modern execution ensures contemporary relevance rather than pure nostalgia.</li>
+                <li>Positions Kalakruti as a platform that respects tradition while embracing innovation.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The architectural form is distinctive and recognizable even at small sizes.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different architectural elements could be emphasized for different content categories.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The structure could build itself from the ground up, suggesting construction of culture.</li>
+                <li>Light could illuminate different parts of the structure sequentially.</li>
+                <li>Media elements could emerge from within the architecture, suggesting content housed within tradition.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo creates a powerful visual metaphor for Kalakruti's mission: building a home for Marathi content that honors architectural traditions while incorporating modern media elements. It suggests permanence, cultural pride, and forward-looking innovation.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #18: Sound Wave Motion -->
+<div class="logo-card" id="logo18">
+    <div class="logo-container">
+        <img src="images/logo18.png" alt="Sound Wave Motion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #18: Sound Wave Motion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>Dynamic sound wave patterns form the central visual element, with varying amplitudes suggesting rhythm and melody.</li>
+                <li>A small media icon (like a play button or speaker) is integrated with the sound waves.</li>
+                <li>The waves might be slightly stylized to suggest traditional Marathi musical instruments or dance forms.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden sound waves against the deep purple background create vibrant contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates the sonic dimension of Marathi culture through a visual representation of sound.</p>
+            <ul>
+                <li>The sound waves represent:
+                    <ul>
+                        <li>🎵 Musical traditions from classical to folk forms</li>
+                        <li>🗣️ Spoken word, poetry, and the phonetic richness of Marathi language</li>
+                        <li>📢 The dynamics of communication and expression</li>
+                    </ul>
+                </li>
+                <li>The flowing, organic nature of sound waves suggests the emotional resonance of audio content.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Maharashtra has rich musical traditions from classical Natya Sangeet to folk Lavani and Powada.</li>
+                <li>Sound wave visualization bridges traditional sound with digital-era audio technology.</li>
+                <li>The dynamic, flowing forms suggest movement and energy characteristic of Marathi performing arts.</li>
+                <li>Positions Kalakruti as a platform that values the auditory dimension of cultural expression.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The waveform is distinctive and recognizable even at small sizes.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different wave patterns could represent different content genres or moods.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The waves could animate in response to actual audio, creating a reactive logo.</li>
+                <li>Waves could flow from left to right, suggesting the progression of sound.</li>
+                <li>The forms could morph between different cultural sound patterns, e.g., from classical to folk rhythms.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo captures the dynamic, flowing nature of sound that is so central to Marathi cultural expression. It bridges traditional audio forms with contemporary digital visualization, suggesting that Kalakruti is a platform where cultural sounds find new digital expression.</p>
+        </div>
+    </div>
+</div><!-- Logo #19: Kalash Pattern -->
+<div class="logo-card" id="logo19">
+    <div class="logo-container">
+        <img src="images/logo19.png" alt="Kalash Pattern Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #19: Kalash Pattern</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A stylized kalash (ceremonial water pot) forms the central element, executed with clean, modern lines.</li>
+                <li>Decorative patterns inspired by Marathi rangoli or textile designs flow from or around the kalash.</li>
+                <li>A subtle media element (like a play button) is integrated into the design.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden kalash and patterns against the deep purple background create rich visual contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo draws on the auspicious kalash symbol, which represents prosperity, abundance, and new beginnings in Maharashtrian culture.</p>
+            <ul>
+                <li>The kalash represents:
+                    <ul>
+                        <li>🏺 Cultural auspiciousness and celebration</li>
+                        <li>💧 Abundance of creativity and content</li>
+                        <li>✨ The vessel that holds and preserves valuable traditions</li>
+                    </ul>
+                </li>
+                <li>The patterns flowing from it suggest the spread of stories and cultural expression.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The kalash is immediately recognizable to Marathi audiences as culturally significant.</li>
+                <li>It appears in important ceremonies, festivals, and as decorative motifs in homes.</li>
+                <li>The modern execution ensures contemporary relevance rather than pure tradition.</li>
+                <li>Positions Kalakruti as a vessel that holds precious cultural content and makes it accessible.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The kalash form is distinctive and recognizable even at small sizes.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different patterns could represent different content categories or moods.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The kalash could appear first, with patterns flowing outward in a fluid animation.</li>
+                <li>Water-like or content-like elements could pour from the kalash, suggesting abundance.</li>
+                <li>Patterns could transform to represent different cultural elements or media types.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo creates a powerful metaphor for Kalakruti's mission: being the vessel that holds precious Marathi cultural content and shares it abundantly. The auspicious kalash symbol brings positive cultural associations while the modern execution ensures contemporary relevance.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #20:Marathi Monogram 'K' + Play Icon -->
+<div class="logo-card" id="logo20">
+    <div class="logo-container">
+        <img src="images/logo20.png" alt="Network Web Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #20: Marathi Monogram 'K' + Play Icon</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>Fuses the brand in Marathi identity, uses a modern, symbolic mark.</li>
+                <li>Anchors the brand in Marathi identity, uses a universal symbol for media and storytelling.</li>
+                <li>Ideal for icon, teen, watermark or animation bumper.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo represents Kalakruti as a network connecting different aspects of Marathi culture and media.</p>
+            <ul>
+                <li>The network represents:
+                    <ul>
+                        <li>🔄 Interconnectedness of different cultural forms</li>
+                        <li>🌐 Digital connectivity and distribution channels</li>
+                        <li>👥 Community of creators and audience members</li>
+                    </ul>
+                </li>
+                <li>The centrality of Marathi culture is emphasized by the central node, with all connections flowing from and to it.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>The network visualization represents Kalakruti's role as a connector in the digital era.</li>
+                <li>Different cultural forms are shown as part of a unified ecosystem rather than separate entities.</li>
+                <li>The modern, tech-inspired design signals digital innovation while the golden color maintains cultural richness.</li>
+                <li>Positions Kalakruti as a platform that creates connections across different forms of Marathi expression.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The network pattern is distinctive and scalable to different sizes.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different sections of the network could be highlighted for different content categories.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>Connection lines could illuminate sequentially, showing information or content flow.</li>
+                <li>Nodes could pulse or highlight as they are activated.</li>
+                <li>The entire network could gently pulse or breathe, suggesting a living ecosystem.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo visualizes Kalakruti's role in the digital ecosystem: connecting diverse elements of Marathi culture into a coherent, accessible network. It suggests both technological sophistication and cultural integration, positioning Kalakruti as a modern platform with deep cultural roots.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #21: Script Fusion -->
+<div class="logo-card" id="logo21">
+    <div class="logo-container">
+        <img src="images/logo21.png" alt="Script Fusion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #21: Script Fusion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>Artistic Devanagari calligraphy forms the central element, with a focus on the flowing, elegant lines of the script.</li>
+                <li>Modern design elements are subtly integrated with the traditional script, creating a fusion aesthetic.</li>
+                <li>A media symbol (like a play button) might be cleverly incorporated into a letter form.</li>
+                <li>The full name "कलाकृती मीडिया" appears beneath in a complementary typeface.</li>
+                <li>The golden script against the deep purple background creates rich contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates the beauty of Devanagari script while bridging traditional calligraphy with contemporary design.</p>
+            <ul>
+                <li>The script fusion represents:
+                    <ul>
+                        <li>📝 The literary heritage of Marathi culture</li>
+                        <li>🔤 The importance of language as a cultural carrier</li>
+                        <li>✒️ The artistry of written expression</li>
+                    </ul>
+                </li>
+                <li>The integration of modern elements suggests innovation within tradition.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Marathi literature has a rich tradition, and the Devanagari script is a fundamental cultural identifier.</li>
+                <li>The calligraphic approach honors traditional penmanship while the modern elements suggest evolution.</li>
+                <li>The focus on script positions language and literature as central to Kalakruti's mission.</li>
+                <li>Sophisticated typography signals quality content and attention to detail.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The script-based design is distinctive and has strong recognition value.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different calligraphic styles could represent different content categories or moods.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The script could appear as if being written by an invisible hand.</li>
+                <li>Modern elements could flow in to join the traditional calligraphy.</li>
+                <li>Letters could transform or reveal hidden media symbols.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo makes language itself the hero, celebrating the beauty of Devanagari script while suggesting its evolution in the digital era. It positions Kalakruti as a platform deeply rooted in literary tradition yet embracing innovation in expression and form.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #22: Cultural Leaf -->
+<div class="logo-card" id="logo22">
+    <div class="logo-container">
+        <img src="images/logo22.png" alt="Cultural Leaf Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #22: Cultural Leaf</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A stylized leaf form creates the central motif, executed with clean, modern lines.</li>
+                <li>The veins of the leaf might suggest Marathi cultural symbols, patterns, or pathways.</li>
+                <li>A media element (like a play button) could be subtly integrated into the leaf design.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden leaf against the deep purple background creates rich visual contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo uses the leaf as a metaphor for organic growth, natural beauty, and the branching nature of cultural evolution.</p>
+            <ul>
+                <li>The leaf represents:
+                    <ul>
+                        <li>🌱 Organic growth and flourishing of culture</li>
+                        <li>🌳 Rootedness in tradition with branches reaching outward</li>
+                        <li>🍃 Natural beauty and sustainability</li>
+                    </ul>
+                </li>
+                <li>The veins of the leaf suggest interconnected pathways of cultural expression and distribution.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Maharashtra has a deep connection to the natural world, reflected in its festivals, arts, and literature.</li>
+                <li>The leaf suggests organic growth rather than artificial construction – culture evolving naturally.</li>
+                <li>The vein patterns can subtly incorporate cultural elements without being literal or clichéd.</li>
+                <li>The natural form creates warmth and accessibility while maintaining visual sophistication.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The leaf shape is distinctive and recognizable even at small sizes.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different leaf types or vein patterns could represent different content categories.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The leaf could grow from a seedling to full form, suggesting cultural development.</li>
+                <li>Veins could illuminate sequentially, showing connectivity and flow.</li>
+                <li>The leaf could gently sway or pulse, suggesting life and vitality.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo creates a beautiful organic metaphor for Kalakruti's mission: nurturing the natural growth and evolution of Marathi culture. It suggests sustainability, rootedness, and organic development – positioning Kalakruti as a platform that respects natural cultural evolution while providing pathways for new growth.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #23: Dance Motion -->
+<div class="logo-card" id="logo23">
+    <div class="logo-container">
+        <img src="images/logo23.png" alt="Dance Motion Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #23: Dance Motion</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>Flowing lines suggest the graceful movement of a Marathi dance form (like Lavani or Koli).</li>
+                <li>The abstract dancer silhouette is rendered with minimal, elegant strokes.</li>
+                <li>A media element (like a play button) might be subtly integrated into the dance position.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden dance form against the deep purple background creates dynamic contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo celebrates movement and performance, central aspects of Marathi cultural expression.</p>
+            <ul>
+                <li>The dance motion represents:
+                    <ul>
+                        <li>💃 Performance traditions in Marathi culture</li>
+                        <li>🌊 Fluidity and grace of artistic expression</li>
+                        <li>✨ Energy and dynamism of live cultural forms</li>
+                    </ul>
+                </li>
+                <li>The abstraction of the dance form makes it timeless rather than tied to a specific dance style.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Maharashtra has rich dance traditions, from classical to folk forms.</li>
+                <li>Dance embodies the integration of music, movement, and storytelling – core to Kalakruti's mission.</li>
+                <li>The flowing lines suggest both tradition and contemporary expression.</li>
+                <li>The abstract approach avoids cultural stereotypes while maintaining cultural specificity.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The dance form is distinctive and has strong recognition value.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different dance poses could represent different content categories or moods.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The dance form could move through a sequence of graceful positions.</li>
+                <li>Lines could flow and extend, suggesting the continuity of movement.</li>
+                <li>The form could transition between different dance styles, suggesting cultural diversity.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo captures the dynamic, expressive quality of Marathi performing arts. It suggests movement, grace, and embodied cultural knowledge – positioning Kalakruti as a platform that values the living, moving nature of cultural tradition rather than static preservation.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Logo #24: Digital Pen -->
+<div class="logo-card" id="logo24">
+    <div class="logo-container">
+        <img src="images/logo24.png" alt="Digital Pen Logo">
+    </div>
+    <div class="logo-info">
+        <h3 class="logo-title">Logo #24: Digital Pen</h3>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🔶</span>Visual Description</h4>
+            <ul>
+                <li>A stylized pen or writing implement forms the central element, with both traditional and digital characteristics.</li>
+                <li>The pen might be creating a flowing line that suggests both handwriting and digital waveforms.</li>
+                <li>The line could subtly incorporate Marathi script elements or cultural symbols.</li>
+                <li>The name "कलाकृती मीडिया" is positioned beneath in bold Devanagari typography.</li>
+                <li>The golden pen and flowing line against the deep purple background creates elegant contrast.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">💡</span>Concept Overview</h4>
+            <p>This logo represents the evolution of creative expression from traditional writing to digital content creation.</p>
+            <ul>
+                <li>The digital pen represents:
+                    <ul>
+                        <li>✒️ Literary tradition and the written word</li>
+                        <li>💻 Modern content creation and digital tools</li>
+                        <li>🔄 The bridge between traditional and digital expression</li>
+                    </ul>
+                </li>
+                <li>The flowing line suggests both script and digital signal – traditional writing becoming digital content.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎯</span>Cultural & Brand Alignment</h4>
+            <ul>
+                <li>Marathi literature has a rich tradition, now finding new expression in digital formats.</li>
+                <li>The pen represents authorship, creativity, and the human touch in content creation.</li>
+                <li>The digital elements suggest innovation and contemporary relevance.</li>
+                <li>The fusion of traditional and digital tools positions Kalakruti as a bridge between cultural heritage and technological opportunity.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🧩</span>Adaptability</h4>
+            <ul>
+                <li>The pen design is distinctive and has strong recognition value.</li>
+                <li>Works effectively across digital and print applications.</li>
+                <li>Different flowing line patterns could represent different content categories or tones.</li>
+                <li>Functions well in both color and monochrome versions.</li>
+            </ul>
+        </div>
+        
+        <div class="concept-section">
+            <h4><span class="emoji">🎞</span>Animation Potential</h4>
+            <ul>
+                <li>The pen could animate as if writing, creating the flowing line in real time.</li>
+                <li>The line could transform from traditional script to digital waveform.</li>
+                <li>Digital elements could emerge from the traditional pen, suggesting evolution.</li>
+            </ul>
+        </div>
+        
+        <div class="final-thought">
+            <h4><span class="emoji">🟣</span>Final Thought</h4>
+            <p>This logo creates a powerful metaphor for Kalakruti's mission: bridging traditional Marathi literary arts with digital expression. It honors the act of creation while embracing new tools and platforms, positioning Kalakruti as both a guardian of tradition and a catalyst for innovation.</p>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+    <!-- General Logos Section -->
+<section id="general-logos">
+    <h2 class="section-title">General Logo Collection</h2>
+    <div class="container">
+        <p class="intro-text" style="text-align: center; margin-bottom: 40px;">The following collection showcases additional logo explorations and concepts, including various approaches to representing Kalakruti Media's brand identity.</p>
+        
+        <div class="grid-2-col">
+            <div class="logo-display">
+                <img src="images/general-logo1.png" alt="Marathi Monogram 'K' + Play Icon">
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Network Web</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• An interconnected web or network of lines forms a circular or symmetrical pattern.</li>
+                    <li>• Key nodes in the network might feature tiny symbols representing different media or cultural forms.</li>
+                    <li>• A central node could contain a Marathi letter or cultural symbol, anchoring the network.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Devanagari Wordmark with Stroke Accent</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A typographic treatment of "कलाकृती मीडिया" with a modern, custom Devanagari font</li>
+                    <li>• A bold shirorekha (top line) flows of arcs creatively</li>
+                    <li>• Celebrates language pride—pure Marathi script with elegance</li>
+                    <li>• Abstract flourish unity, rhythm or timeless stories</li>
+                    <li>• Dynamic identity—perfect for animation or event badges</li>
+                </ul>
+            </div>
+            <div class="logo-display">
+                <img src="images/general-logo2.png" alt="Devanagari Wordmark with Stroke Accent">
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div class="logo-display">
+                <img src="images/general-logo3.png" alt="Play & Stream Fusion">
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Play & Stream Fusion</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A modern play button at the center, with curved wave-lines radiating like digital ripples</li>
+                    <li>• Represents streaming, sound, and energy</li>
+                    <li>• Echoes the logo of Spotify, YouTube Music and JioSaavn</li>
+                    <li>• Combines tech fluidity with cultural motion (Lavani, Shot Garba)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Heritage Stage Emblem</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A circular logo with a bold 'K' in center, designed as a base for adaptable visual variations</li>
+                    <li>• One core emblem, infinite thematic expressions (music, literature, cinema)</li>
+                    <li>• Prepares flexibility for future branding extensions</li>
+                    <li>• Culturally grounded and technically scalable</li>
+                </ul>
+            </div>
+            <div class="logo-display">
+                <img src="images/general-logo4.png" alt="Heritage Stage Emblem">
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div class="logo-display">
+                <img src="images/general-logo5.png" alt="Dynamic Logo System">
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Dynamic Logo System</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A circular logo with a bold 'K' in the center, surrounded by adaptable visual elements</li>
+                    <li>• Base structure remains consistent while graphics change based on content type</li>
+                    <li>• Music, theater, film, and festival variations possible within one framework</li>
+                    <li>• Perfect for multi-platform branding and sub-brand development</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Typography-Focused Logo</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• Custom-drawn Devanagari lettering for "कलाकृती" with artistic flair</li>
+                    <li>• Emphasizes the meaning of Kalakruti ("artistic creation") through the typography itself</li>
+                    <li>• No need for additional symbols - the lettering becomes the icon</li>
+                    <li>• Classic yet contemporary approach that honors Marathi language</li>
+                </ul>
+            </div>
+            <div class="logo-display">
+                <img src="images/general-logo6.png" alt="Typography-Focused Logo">
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div class="logo-display">
+                <img src="images/general-logo7.png" alt="Chandrakor Concept">
+            </div>
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Chandrakor Concept</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A stylized crescent moon (Chandrakor) with a play button integrated</li>
+                    <li>• Cultural significance: Chandrakor is a traditional Maharashtrian symbol</li>
+                    <li>• Represents aspiration, victory, and cultural pride</li>
+                    <li>• Clean, modern execution that works across platforms</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="grid-2-col" style="margin-top: 60px;">
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">Minimal Soundwave "क"</h3>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>• A sleek, modern Devanagari letter "क" shaped with geometric precision</li>
+                    <li>• Flowing soundwave integrated with the letterform</li>
+                    <li>• Symbolizes fusion of language and sound/media</li>
+                    <li>• Works well across audio, literature, and video content formats</li>
+                </ul>
+            </div>
+            <div class="logo-display">
+                <img src="images/general-logo8.png" alt="Minimal Soundwave क">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" style="margin-top: 80px;">
+        <h3 style="color: var(--primary-color); text-align: center; margin-bottom: 30px;">Logo Evolution Process</h3>
+        
+        <div style="background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+            <p>The development of Kalakruti Media's logo has been a thoughtful journey of exploring Maharashtrian cultural elements while embracing modern media aesthetics. Each concept aims to:</p>
+            
+            <ul style="margin-top: 20px; list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--secondary-color); font-weight: bold;">1.</span>
+                    <strong>Honor Marathi heritage</strong> - Through cultural symbols, Devanagari script, and traditional art forms
+                </li>
+                <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--secondary-color); font-weight: bold;">2.</span>
+                    <strong>Communicate media focus</strong> - Visual elements that suggest film, music, performance and digital content
+                </li>
+                <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--secondary-color); font-weight: bold;">3.</span>
+                    <strong>Achieve design excellence</strong> - Clean, scalable, versatile marks that work across platforms
+                </li>
+                <li style="margin-bottom: 15px; padding-left: 30px; position: relative;">
+                    <span style="position: absolute; left: 0; color: var(--secondary-color); font-weight: bold;">4.</span>
+                    <strong>Build brand flexibility</strong> - Systems that can grow with the organization's expanding content types
+                </li>
+            </ul>
+            
+            <p style="margin-top: 20px;">The final logo selection will become the cornerstone of Kalakruti's visual identity across all touchpoints - from digital platforms to event branding, merchandise, and promotional materials.</p>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Kalakruti Media Logo Concepts | Designed with Pride in Marathi Culture</p>
+            <p>&copy; 2025 Kalakruti Media. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <a href="#top" class="back-to-top" id="backToTop">↑</a>
+    
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
